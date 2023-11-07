@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <title>Alpha Specialist Hospital</title>
+  </head>
+  <body class="">
+    <!-- Navigation -->
+    <div class="bg-blue-200 shadow-sm fixed top-0 w-full h-24 z-30">
+      <nav class="nav container mx-auto p-6 flex justify-between align-middle">
+        <!-- Logo-->
+        <div class="pt-2">
+          <img src="./Imggs/logs.png" alt="" class=" w-1/3 md:w-32">
+        </div>
+        <!-- Flex items -->
+        <div class="flex justify-between items-center">
+
+          <!-- Nav Desktop-->
+          <div class="hidden md:flex">
+            <ul class="inline-flex gap-6 space-x-4 align-middle">
+              <!-- HOME -->
+              <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+              <!-- ABOUT -->
+              <li id="SubAbout" class="subab "><a href="#About" class="hover:text-blue-400">About Us
+                <div class="my-4">
+                  <ul id="aboutSub" class="abus hidden space-y-4 p-4 bg-slate-200">
+                    <li class="text-sm border-b-2 border-transparent hover:border-red-800 hover:text-red-700 pb-2"><a href="#missionText">Mission</a></li>
+                    <li class="text-sm border-b-2 border-transparent hover:border-red-800 hover:text-red-700 pb-2"><a href="#visionText">Vision</a></li>
+                    <li class="text-sm border-b-2 border-transparent hover:border-red-800 hover:text-red-700 pb-2"><a href="#Facilities">Facilities</a></li>
+                    <li class="text-sm border-b-2 border-transparent hover:text-red-700"><a href="#Team">Team</a></li>
+                  </ul>
+                </div>
+              </a></li>
+              <!-- SERVICES -->
+              <li id="mainService" class="mainService "><a href="#Services" class="mainService hover:text-blue-400">Services
+                <!-- SubService -->
+                <!-- <div class="my-4">
+                  <ul id="subService" class="subService hidden space-y-4 p-4 text-left bg-slate-200">
+                    <li class="text-sm border-b-2 border-transparent hover:border-red-800 hover:text-red-700 pb-2"><a href="#">Our Packages</a></li>
+                    <li class="text-sm border-b-2 border-transparent hover:border-red-800 hover:text-red-700 pb-2"><a href="#">Home Service</a></li>
+                    <li class="text-sm border-b-2 border-transparent hover:border-red-800 hover:text-red-700 pb-2"><a href="#">New Patient</a></li>
+                    <li class="text-sm border-b-2 border-transparent hover:text-red-700"><a href="#"></a></li>
+                  </ul>
+                </div> -->
+              </a></li>
+              <!-- OUR TEAM -->
+              <!-- <li id="mainTeam" class="mainTeam"><a href="#Team" class="hover:text-blue-400">Our Team
+                SubTeam
+                <div class="my-4">
+                  <ul id="subTeam" class="subTeam hidden space-y-4 p-4 text-left bg-slate-200">
+                    <li class="text-sm border-b-2 border-transparent hover:border-red-800 hover:text-red-700 pb-2"><a href="#">The Board</a></li>
+                    <li class="text-sm border-b-2 border-transparent hover:border-red-800 hover:text-red-700 pb-2"><a href="#">HR TEAM</a></li>
+                    <li class="text-sm border-b-2 border-transparent hover:border-red-800 hover:text-red-700 pb-2"><a href="#">Hospital Staff</a></li>
+                    <li class="text-sm border-b-2 border-transparent hover:text-red-700"><a href="#">Join The Team</a></li>
+                  </ul>
+                </div>
+              </a></li> -->
+              <!-- TESTIMONIALS -->
+              <li><a href="#Testimonials" class="hover:text-blue-400">Testimonials</a></li>
+              <!-- CONTACT US -->
+              <li><a href="#Contacts" class="hover:text-blue-400">Contact Us</a></li>
+              <li></li>
+            </ul>
+            <!-- <div class="">
+              <a href="" class="hidden bg-red-600 text-white rounded-full baseline p-2 hover:bg-blue-500 shadow-md md:block"
+              >
+                Get Started
+              </a>
+            </div> -->
+          </div>
+          <!-- button started -->
+
+
+          <!-- Hamburger menu -->
+          <div id="hamburgerMenu"
+            class="hamburger z-50 mt-2 w-6 h-6 flex flex-col justify-around items-baseline overflow-hidden md:hidden"
+          >
+            <div class="upmenu w-full h-1 bg-gray-800 rounded-full mb-1"></div>
+            <div class="midmenu w-full h-1 bg-gray-800 rounded-full mb-1"></div>
+            <div class="downmenu w-full h-1 bg-gray-800 rounded-full mb-1"></div>
+          </div>
+        </div>
+      </nav>
+      <!-- NAV DESKTOP END -->
+
+      <!-- Nav Mobile STARTS-->
+      <div id="navMobile" class="hidden navMobile">
+        <nav class=" bg-gray-800 bg-opacity-95 w-full h-screen align-middle flex flex-col px-6 py-4 md:hidden">
+          <ul class="container mx-auto w-full h-screen block space-y-8 align-middle ">
+            <li class="flex space-x-2 mb-4  text-gray-50 w-full cursor-pointer shadow-md" >
+              <a id="mobileOp"
+              class="mobileOp flex hover:bg-gray-400 hover:text-gray-800 w-full p-2 text-lg"
+              href="#home"
+              >
+              <span> <img src="./Imggs/home-active.svg" alt="" class="mr-4 w-8 bg-slate-200 rounded-full p-1"></span>
+              Home</a
+            >
+            </li>
+            <!-- NavAbout -->
+            <li class="flex flex-col mb-4 w-full transition" onclick="more()">
+              <!-- <img src="./Imggs/home-active.svg" alt="" class="w-6"> -->
+              
+              <a id="mobileOp"
+              class="mobileOp  flex justify-between hover:bg-gray-400 hover:text-gray-800 p-2 text-gray-50 w-full"
+              href="#About" 
+              >
+              <div class="flex">
+                <span> <img src="./Imggs/learning-active.svg" alt="" class="mr-4 w-8 bg-slate-200 rounded-full p-1"></span>
+                About Us
+              </div>
+              <div class="">
+                <img src="./Imggs/arrow-right.svg" alt="">
+              </div>
+              </a
+            >
+              <ul id="subAbMobile" class="aboutMobile hidden text-slate-50 space-y-3 w-full bg-slate-50 bg-opacity-10" >
+                <li class="ml-12 p-2" ><a href="#misionText">The Mission</a></li>
+                <li class="ml-12 p-2" ><a href="#visionText">The Vision</a></li>
+                <li class="ml-12 p-2" ><a href="#Facilities">Facilities</a></li>
+                <li class="ml-12 p-2" ><a href="#Team">Team</a></li>
+              </ul>
+            </li>
+            <!-- ServicesMobile -->
+            <li class="flex flex-col mb-4" onclick="sore()">
+              <!--  -->
+              <a id=""
+              class="mobileOp  flex justify-between hover:bg-gray-400 hover:text-gray-800 p-2 text-gray-50 w-full"
+              href="#Services"
+              >
+              <div class="flex">
+                <span> <img src="./Imggs/project-active.svg" alt="" class="mr-4 w-8 bg-slate-200 rounded-full p-1"></span>
+                Services
+              </div>
+              <div class="">
+                <img src="./Imggs/arrow-right.svg" alt="" class="navArrow">
+              </div>
+              </a>
+              <!--  -->
+              <ul id="subServMobile" class="subMobile hidden text-slate-50 space-y-3 w-full bg-slate-50 bg-opacity-10">
+                <!-- <li class="ml-12 p-2" ><a href="#">The Mission</a></li>
+                <li class="ml-12 p-2" ><a href="#">The Vision</a></li>
+                <li class="ml-12 p-2" ><a href="#">Facilities</a></li>
+                <li class="ml-12 p-2" ><a href="#">The Mission and Scope</a></li> -->
+              </ul>
+            </li>
+            <!-- Mobile Testimonial -->
+            <li class="flex space-x-2 mb-4" >
+              <!--  -->
+              <a
+              class="mobileOp flex hover:bg-gray-400 hover:text-gray-800 p-2 text-gray-50 w-full"
+              href="#Testimonials"
+              >
+              <span> <img src="./Imggs/home-active.svg" alt="" class="mr-4 w-8 bg-slate-200 rounded-full p-1"></span>
+              Testimonials</a
+            >
+            </li>
+            <!-- Contact Mobile -->
+            <li class="flex space-x-2 mb-4" >
+              <!--  -->
+              <a
+              class="flex hover:bg-gray-400 hover:text-gray-800 p-2 text-gray-50 w-full"
+              href="#Contacts"
+              >
+              <span> <img src="./Imggs/home-active.svg" alt="" class="mr-4 w-8 bg-slate-200 rounded-full p-1"></span>
+              Contact Us</a
+            >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Nav Mobile ENDS-->
+    </div>
+
+
+
+    <!-- Hero Section -->
+    <section id="home" class="mt-24 py-6 min-h-screen bg-no-repeat bg-center bg-cover bg-blend-multiply bg-teal-600" style="background-image: url(./Imggs/hospital.jpg);">
+      <!-- Header and Tagline -->
+      <div class="w-full text-center my-8">
+        <p class="text-center text-3xl font-bold text-slate-50 pb-2 md:text-5xl">
+          <span class="flex align-middle justify-center bg-slate-300 w-fit mx-auto rounded-sm">
+            <img src="./Imggs/logs.png" class="max-w-sm h-16" alt="">
+          </span>
+          ALPHA SPECIALIST HOSPITAL
+        </h1>
+        <!-- Tagline -->
+        <p  class="italic text-slate-50">...we deliver one of the best services in Nigeria</p>
+      </div>
+      <!-- Header and Tagline Ends -->
+      <!-- Hero Section -->
+      <div
+        class="container w-full space-y-8 flex flex-col my-8 py-6 mx-auto justify-between align-middle items-center text-center md:flex-row md:text-left " 
+      >
+        <!-- Hero Text Starts -->
+        <div data-aos="fade-right" class="w-full px-6 space-y-12 flex flex-col justify-between align-middle items-center text-center md:items-start md:text-left md:w-1/2">
+          <h1 class="max-w-full stroke-slate-100 stroke-2 mt-10 text-2xl md:text-4xl font-bold text-blue-300 mb-6">We Welcome You To The <span class="text-slate-50">ASH</span> Family</h1>
+          <p class="max-w-full mb-6 text-slate-50 text-lg">
+            We provide world class healthcare delivery system aimed at giving
+            you the best experience. With our seamless insurance policy,
+            healthcare services remains affordable. Making your health a priority
+            is what we do best.
+          </p>
+          <div class="">
+            <a href="#About">
+              <button class="bg-blue-700 text-white mb-6 rounded-full py-2 flex align-middle px-3 border-2 border-slate-100 shadow-sm hover:bg-blue-500">
+                Read More
+                <span class="font-bold px-2">></span>
+              </button>
+
+            </a>
+          </div>
+
+        </div>
+        <!-- Hero Text Ends -->
+        <!-- Hero Image -->
+        <div data-aos="fade-right" class="md:w-1/2">
+          <img src="./Imggs/doctorandpatient-removebg-preview.png" class="border-b-4 border-gray-400 shadow-lg" alt="">
+        </div>
+      </div>
+      <!-- SERVICE HOURS -->
+      <div class="mx-6 -mb-16 flex justify-center align-middle md:flex-row">
+        <div class="flex flex-1 flex-col justify-between items-center md:flex-row md:space-x-3">
+          <!-- First Card -->
+          <div data-aos="fade-up" class="flex flex-col flex-1 justify-around w-full md:w-1/4 h-64 min-h-fit overflow-hidden space-y-1 p-4 pl-6 bg-blue-100 bg-opacity-80">
+            <!-- icon -->
+            <div class="flex flex-col space-y-2">
+              <!-- logo -->
+              <img src="./Imggs/project-active.svg" alt="" class="w-8">
+              <!-- logo -->
+              <p class="font-bold text-xl">
+                <!-- text-[#09bd38] -->
+                Opening Hours
+              </p>
+            </div>
+            <div class="">
+              <p class="md:text-md">We are open 24 hours every day of the week</p>
+            </div>
+            <!-- <div class="openTime">
+              <p class="text-lg">We are open 24 hours every day of the week</p>
+            </div> -->
+            <div class="">
+              <a href="tel:+2348060010446" class="bg-blue-700 inline-block text-slate-50 rounded-full border-2 border-slate-50 py-2 px-4 hover:bg-blue-500">Reach Out</a>
+            </div>
+          </div>
+          <!-- Second Card -->
+          <div data-aos="fade-down" class="flex flex-col flex-1 justify-around w-full md:w-1/4 h-64 min-h-fit overflow-hidden space-y-1 p-4 pl-6 bg-teal-100 bg-opacity-80">
+            <!-- icon -->
+            <div class="flex flex-col space-y-2">
+              <img src="./Imggs/community-active.svg" alt="" class="w-8">
+              <p class="font-bold text-xl">
+                Make an Appointment
+              </p>
+            </div>
+            <div class="space-y-2">
+              <p class="md:text-md">You can easily book an appointment to see us at ALPHA</p>
+              <p class="md:text-md">Lets help you manage your time</p>
+            </div>
+            <div class="">
+              <a href="tel:+2348060010446" class="bg-blue-700 inline-block text-slate-50 rounded-full border-2 border-slate-50 py-2 px-4 hover:bg-blue-500">Book Now</a>
+            </div>
+          </div>
+          <!-- Third Card -->
+          <div data-aos="fade-up" class="flex flex-col flex-1 grow justify-around w-full md:w-1/4 h-64 min-h-fit overflow-hidden space-y-1 p-4 pl-6 bg-blue-100 bg-opacity-80">
+            <!-- icon -->
+            <div class="flex flex-col space-y-2">
+              <img src="./Imggs/env-active.svg" alt="" class="w-8">
+              <p class="font-bold text-xl">
+                Emergency Services
+              </p>
+            </div>
+            <div class="space-y-2">
+              <p class="md:text-md">We run a 24HOURS Services</p>
+              <p class="md:text-md">Any Emergency? call: <a href="" class="text-sm text-blue-700 font-bold">0803-ASH-CARE</a></p>
+            </div>
+            <div class="">
+              <a href="tel:+2348060010446" class="bg-blue-700 inline-block text-slate-50 rounded-full border-2 border-slate-50 py-2 px-4 hover:bg-blue-500">Reach Out</a>
+            </div>
+          </div>
+          <!-- Fourth Card -->
+          <div  data-aos="fade-down" class="flex flex-col flex-1 justify-around w-full md:w-1/4 h-64 min-h-fit overflow-hidden space-y-1 p-4 pl-6 bg-rose-100 bg-opacity-80">
+            <!-- icon -->
+            <div class="flex flex-col space-y-2">
+              <img src="./Imggs/info-green.svg" alt="" class="w-8">
+              <p class="font-bold text-xl">
+                Enquiries?
+              </p>
+            </div>
+            <div class="">
+              <p class="md:text-md">Do you have any question?</p>
+              <p class="md:text-md">Let us answer any questions you might have</p>
+            </div>
+            <div class="" id="">
+              <a href="#Faqs" class="bg-blue-700 inline-block text-slate-50 rounded-full border-2  border-slate-50 py-2 px-4 hover:bg-blue-500">FAQs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HERO SECTION ENDS -->
+
+    <!-- ABOUT US Section -->
+    <section id="About" class="bg-slate-100 w-full h-full pb-8 pt-20">
+      <div class="text-center mb-12 p-8">
+        <h1 class="text">ABOUT US</h1>
+        <hr>
+      </div>
+
+      <!-- About Content -->
+      <div  class=" flex flex-col justify-center align-middle text-center bg-white w-full h-full md:flex-row md:text-left">
+        <div>
+          <img src="./Imggs/chinko.jpeg" alt="" class="flex justify-end align-baseline">
+        </div>
+
+        <div data-aos="fade-right" id="missionText" class="w-full text-center py-4 md:pr-16 md:mr-8 space-y-8 align-middle flex flex-col md:px-6 md:text-left md:w-[60%]">
+          <h1 class="text-xl font-bold text-gray-800">What We Are!</h1>
+          <p class="md:text-xl">Alpha Specialist Hospital is a licencsed medical facility situated in Akobo area of Ibadan operating since 2017. We are registered and licensed by relevant regulatory bodies including the NHIS. As a hospital, we have continually evolved in our operations and care service provision for our customers. This led to the recent commissioning of our new, fully equiped ultra-modern hospital affording us the opportunity to serve a wider range of people. </p>
+          <p class="md:text-xl">At Alpha Specialist Hospital, we work in compliance with local and international best practices when providing our services. It is our goal that everyone enjoys quality healthcare services at affordable cost.</p> 
+        </div>
+      </div>
+      
+      <!-- ABOUT-->
+
+        <div class=" flex flex-col justify-between align-middle md:px-6 md:flex-row">
+          <div data-aos="fade-right" class=" flex flex-col bg-blue-50 justify-between align-middle items-center w-full h-full md:w-1/2">
+  
+            <div data-aos="fade-right" id="missionText" class="">
+              <div class="text-center md:py-6 md:text-left ">
+                <h1 class="text-gray-800 text-xl font-bold bg-slate-200 rounded-sm md:py-2 px-4 w-full md:w-1/2">Our Mission</h1>
+                <p class="pt-3 p-6 md:text-xl md:px-0">
+                  We are committed to delivering exceptional healthcare services through focus on excellence amd innovation in patient health management, state of the art facilities, research for growth and community development. 
+                </p>
+              </div>
+            </div>
+  
+            <div data-aos="fade-down" id="visionText" class="">
+              <div class="text-center mt-8 py-6 mb-12 md:text-left">
+                <h1 class="text-gray-800 text-xl font-bold bg-slate-200 rounded-sm pb-2 py-2 px-4 w-full md:w-1/2">Our Vision</h1>
+                <p class="pt-3 p-4 md:text-xl md:px-0">
+                  To be a leading medical center renowned for providing quality and affordable healthcare services.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-down" class="w-full object-fill md:w-1/2 bg-blue-50 flex justify-center md:justify-end align-middle">
+            <img src="./Imggs/doc1).jpeg" alt="" class="">
+          </div>
+        </div>
+    </section>
+    <!-- ABOUT US SECTION ENDS -->
+
+    <!-- Facilities -->
+    <section id="Facilities" class=" pb-8 pt-10">
+      <!-- <div class="text-center mb-12 p-8">
+        <h1 class="text">OUR FACILITIES</h1>
+        <hr>
+      </div> -->
+      <!-- FACILITIES -->
+
+       <!-- Swiper -->
+   
+    <!-- FACILITIES SLIDER END -->
+    </section>
+    <!-- END OF FACILITIES -->
+
+
+
+    <!-- UPDATES -->
+    <section id="latest updates">
+      <!-- <div class="">
+        <div class="">
+          <div class="">
+            <h1 class="uppercase font-bold text-xl">The Prevalence of malaria and it's management</h1>
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- TEAM OF DOCTORS -->
+    <section id="Team" class="bg-slate-100 w-full h-full md:py-8 bg-cover bg-no-repeat bg-center bg-blend-multiply">
+      <div class="container mx-auto items-center flex flex-col justify-between align-middle md:flex-row mb-6" class="bg-blue-600 w-full h-full md:py-8 bg-cover bg-no-repeat bg-center bg-blend-multiply" style="background-image: url(./Imggs/bgwave.jpeg);">
+        <div class=" flex flex-col mx-auto justify-between align-start w-full md:w-1/2">
+
+          <div id="missionText" class="">
+            <div class="text-center md:py-6 md:text-left ">
+              <h1 data-aos="fade-right" class="text-gray-800 text-xl font-bold bg-slate-200 rounded-sm py-2 px-4 w-full">Your Good Health is Our Utmost Concern</h1>
+              <p data-aos="fade-right" class="text-slate-50 p-6"><span class="font-mono text-2xl text-yellow-800">"</span> Alpha Specialist Hospital is proud to offer a comprehensive and dedicated team of healthcare professionals who bring a wealth of experience and expertise to our patients. Our hospital is home to a diverse array of world-class practitioners who are committed to delivering the highest standard of care.</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 p-8 shadow-lg">
+          <img data-aos="fade-right" src="./Imggs/Ddoc.jpeg" alt="" class="rounded-t-3xl w-full mb-4">
+          <div class="bg-blue-100 p-6">
+            <h1 data-aos="fade-right"  class="font-bold text-sm text-gray-800">DR OLADEJI, (MB;BS, MSc, FWACS, FRCS )</h1>
+            <p data-aos="fade-right" class="text-gray-500 text-sm">Consultant Radiology and Clinical Oncology</p>
+            <p data-aos="fade-right" class="text-gray-500 text-sm">Chief Medical Director</p>
+            <p data-aos="fade-right" class="text-gray-500 text-sm">Alpha Specialist Hospital</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <!-- Doctor Team -->
+
+    <!-- DOCTORS SLIDER -->
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- SLIDER 1 -->
+        <div class="swiper-slide">
+          <div class="flex justify-around items-center">
+          <!-- Card 1 -->
+          <div class="flex flex-col items-center bg-blue-100 rounded-lg p-4 mb-8 space-y-4 m-2">
+            <div class="img rounded-full flex justify-center items-center  border-2 border-slate-50 p-2 overflow-hidden -mt-14">
+              <div class="border-2 border-slate-50 grid place-content-center rounded-full overflow-hidden">
+                <img src="./Imggs/doc scrub.jpeg" alt="" class=" rounded-full">
+              </div>
+            </div>
+            <!-- Doctors description -->
+            <div class="">
+              <p class="text-xl text-gray-500">DR. Michaels</p>
+              <p class="text-gray-600">Consultant Otorhinolaryngologist</p>
+            </div>
+          </div>
+          <!-- Card 2 Slide1 -->
+          <div class="hidden md:flex flex-col items-center bg-blue-100 rounded-lg p-4 mb-8 space-y-4 m-2">
+            <div class="img  rounded-full grid place-content-center  border-2 border-slate-50 p-2 overflow-hidden -mt-14">
+              <div class="border-2 border-slate-50 grid place-content-center p-2 rounded-full overflow-hidden">
+                <img src="./Imggs/docGal.jpeg" alt="" class="object-cover rounded-full">
+              </div>
+            </div>
+            <!-- Doctors description -->
+            <div class="">
+              <p class="text-xl text-gray-500">DR. Abdulmalik</p>
+              <p class="text-gray-600">Consultant OB/GYN</p>
+            </div>
+          </div>
+          <!-- Card 3 Slide1 -->
+          <div class="hidden md:flex flex-col items-center bg-blue-100 rounded-lg p-4 mb-8 space-y-4 m-2">
+            <div class="img rounded-full grid place-content-center  border-2 border-slate-50 p-2 overflow-hidden -mt-14">
+              <div class="border-2 border-slate-50 grid place-content-center p-2 rounded-full overflow-hidden">
+                <img src="./Imggs/doc scrub.jpeg" alt="" class="object-cover rounded-full">
+              </div>
+            </div>
+            <!-- Doctors description -->
+            <div class="">
+              <p class="text-xl text-gray-500">DR. Abdulmalik</p>
+              <p class="text-gray-600">Consultant OB/GYN</p>
+            </div>
+          </div>
+          <!-- Card 4 Slide1 -->
+          <div class="hidden md:flex flex-col items-center bg-blue-100 rounded-lg p-4 mb-8 space-y-4 m-2">
+            <div class="img rounded-full grid place-content-center  border-2 border-slate-50 p-2 overflow-hidden -mt-14">
+              <div class="border-2 border-slate-50 grid place-content-center p-2 rounded-full overflow-hidden">
+                <img src="./Imggs/docGal.jpeg" alt="" class="object-cover rounded-full">
+              </div>
+            </div>
+            <!-- Doctors description -->
+            <div class="">
+              <p class="text-xl text-gray-500">DR. Abdulmalik</p>
+              <p class="text-gray-600">Consultant OB/GYN</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- SLIDER 1 ENDS -->
+
+        <!-- SLIDER 2 STARTS -->
+        <div class="swiper-slide">
+          <div class="flex justify-around items-center">
+          <!-- Card 1 -->
+          <div class="hidden md:flex flex-col items-center bg-blue-100 rounded-lg p-4 mb-8 space-y-4 m-2">
+            <div class="  rounded-full grid place-content-center  border-2 border-slate-50 p-2 overflow-hidden -mt-14">
+              <div class="border-2 border-slate-50 grid place-content-center p-2 rounded-full overflow-hidden">
+                <img src="./Imggs/doc scrub.jpeg" alt="" class="object-cover rounded-full">
+              </div>
+            </div>
+            <!-- Doctors description -->
+            <div class="">
+              <p class="text-xl text-gray-500">DR. Ope</p>
+              <p class="text-gray-600">Consultant Paediatrician</p>
+            </div>
+          </div>
+          <!-- Card 2 Slide1 -->
+          <div class="flex flex-col items-center bg-blue-100 rounded-lg p-4 mb-8 space-y-4 m-2">
+            <div class="img min-h-72  rounded-full grid place-content-center  border-2 border-slate-50 p-2 overflow-hidden -mt-14">
+              <div class="border-2 border-slate-50 grid place-content-center p-2 rounded-full overflow-hidden">
+                <img src="./Imggs/docGal.jpeg" alt="" class="object-cover rounded-full">
+              </div>
+            </div>
+            <!-- Doctors description -->
+            <div class="">
+              <p class="text-xl text-gray-500">DR. Adebayo</p>
+              <p class="text-gray-600">Consultant Anaesthetics</p>
+            </div>
+          </div>
+          <!-- Card 3 Slide1 -->
+          <div class="hidden md:flex flex-col items-center bg-blue-100 rounded-lg p-4 mb-8 space-y-4 m-2">
+            <div class="img min-h-72  rounded-full grid place-content-center  border-2 border-slate-50 p-2 overflow-hidden -mt-14">
+              <div class="border-2 border-slate-50 grid place-content-center p-2 rounded-full overflow-hidden">
+                <img src="./Imggs/doc scrub.jpeg" alt="" class="object-cover rounded-full">
+              </div>
+            </div>
+            <!-- Doctors description -->
+            <div class="">
+              <p class="text-xl text-gray-500">DR. Afuwape</p>
+              <p class="text-gray-600">Consultant GI Surgeon</p>
+            </div>
+          </div>
+          <!-- Card 4 Slide1 -->
+          <div class="hidden md:flex flex-col items-center bg-blue-100 rounded-lg p-4 mb-8 space-y-4 m-2">
+            <div class="img min-h-72  rounded-full grid place-content-center  border-2 border-slate-50 p-2 overflow-hidden -mt-14">
+              <div class="border-2 border-slate-50 grid place-content-center p-2 rounded-full overflow-hidden">
+                <img src="./Imggs/docGal.jpeg" alt="" class="object-cover rounded-full">
+              </div>
+            </div>
+            <!-- Doctors description -->
+            <div class="">
+              <p class="text-xl text-gray-500">DR. Ajayi</p>
+              <p class="text-gray-600">Consultant General Surgeon</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- SLIDER 2 ENDS -->
+
+        <!-- SLIDER 3 STARTS -->
+        <div class="swiper-slide">
+          <div class="flex justify-around items-center">
+          <!-- Card 1 -->
+          <div class="hidden md:flex flex-col items-center bg-blue-100 rounded-lg p-4 mb-8 space-y-4 m-2">
+            <div class="img min-h-72 rounded-full grid place-content-center  border-2 border-slate-50 p-2 overflow-hidden -mt-14">
+              <div class="border-2 border-slate-50 grid place-content-center p-2 rounded-full overflow-hidden">
+                <img src="./Imggs/doc scrub.jpeg" alt="" class="object-cover rounded-full">
+              </div>
+            </div>
+            <!-- Doctors description -->
+            <div class="">
+              <p class="text-xl text-gray-500">DR. Adeleye</p>
+              <p class="text-gray-600">Consultant Endocrinologist</p>
+            </div>
+          </div>
+          <!-- Card 2 Slide1 -->
+          <div class="hidden md:flex flex-col items-center bg-blue-100 rounded-lg p-4 mb-8 space-y-4 m-2">
+            <div class="img min-h-72 rounded-full grid place-content-center  border-2 border-slate-50 p-2 overflow-hidden -mt-14">
+              <div class="border-2 border-slate-50 grid place-content-center p-2 rounded-full overflow-hidden">
+                <img src="./Imggs/docGal.jpeg" alt="" class="object-cover rounded-full">
+              </div>
+            </div>
+            <!-- Doctors description -->
+            <div class="">
+              <p class="text-xl text-gray-500">DR. Edijana</p>
+              <p class="text-gray-600">Clinical Oncology Specialist</p>
+            </div>
+          </div>
+          <!-- Card 3 Slide1 -->
+          <div class="flex flex-col items-center bg-blue-100 rounded-lg p-4 mb-8 space-y-4 m-2">
+            <div class="img min-h-72 rounded-full grid place-content-center  border-2 border-slate-50 p-2 overflow-hidden -mt-14">
+              <div class="border-2 border-slate-50 grid place-content-center p-2 rounded-full overflow-hidden">
+                <img src="./Imggs/docGal.jpeg" alt="" class="object-cover rounded-full">
+              </div>
+            </div>
+            <!-- Doctors description -->
+            <div class="">
+              <p class="text-xl text-gray-500">DR. Yaya</p>
+              <p class="text-gray-600">General Practitional</p>
+            </div>
+          </div>
+          <!-- Card 4 Slide1 -->
+          <div class="hidden md:flex flex-col items-center bg-blue-100 rounded-lg p-4 mb-8 space-y-4 m-2">
+            <div class="img min-h-72 rounded-full grid place-content-center  border-2 border-slate-50 p-2 overflow-hidden -mt-14">
+              <div class="border-2 border-slate-50 grid place-content-center p-2 rounded-full overflow-hidden">
+                <img src="./Imggs/doc scrub.jpeg" alt="" class="object-cover rounded-full">
+              </div>
+            </div>
+            <!-- Doctors description -->
+            <div class="">
+              <p class="text-xl text-gray-500">DR. Adebayo</p>
+              <p class="text-gray-600">Consultant ER</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- SLIDER 3 ENDS -->
+        <!-- SLIDER 4 STARTS -->
+        <div class="swiper-slide">
+          <div class="flex justify-around items-center">
+          <!-- Card 1 -->
+          <div class="hidden md:flex flex-col items-center bg-blue-100 rounded-lg p-4 mb-8 space-y-4 m-2">
+            <div class="img min-h-72 rounded-full grid place-content-center  border-2 border-slate-50 p-2 overflow-hidden -mt-14">
+              <div class="border-2 border-slate-50 grid place-content-center p-2 rounded-full overflow-hidden">
+                <img src="./Imggs/docGal.jpeg" alt="" class="object-cover rounded-full">
+              </div>
+            </div>
+            <!-- Doctors description -->
+            <div class="">
+              <p class="text-xl text-gray-500">DR. Michaels</p>
+              <p class="text-gray-600">Consultant Otorhinolaryngologist</p>
+            </div>
+          </div>
+          <!-- Card 2 Slide1 -->
+          <div class="hidden md:flex flex-col items-center bg-blue-100 rounded-lg p-4 mb-8 space-y-4 m-2">
+            <div class="img min-h-72 rounded-full grid place-content-center  border-2 border-slate-50 p-2 overflow-hidden -mt-14">
+              <div class="border-2 border-slate-50 grid place-content-center p-2 rounded-full overflow-hidden">
+                <img src="./Imggs/doc scrub.jpeg" alt="" class="object-cover rounded-full">
+              </div>
+            </div>
+            <!-- Doctors description -->
+            <div class="">
+              <p class="text-xl text-gray-500">DR. Abdulmalik</p>
+              <p class="text-gray-600">Consultant OB/GYN</p>
+            </div>
+          </div>
+          <!-- Card 3 Slide1 -->
+          <div class="hidden md:flex flex-col items-center bg-blue-100 rounded-lg p-4 mb-8 space-y-4 m-2">
+            <div class="img min-h-72 rounded-full grid place-content-center  border-2 border-slate-50 p-2 overflow-hidden -mt-14">
+              <div class="border-2 border-slate-50 grid place-content-center p-2 rounded-full overflow-hidden">
+                <img src="./Imggs/docGal.jpeg" alt="" class="object-cover rounded-full">
+              </div>
+            </div>
+            <!-- Doctors description -->
+            <div class="">
+              <p class="text-xl text-gray-500">DR. Abdulmalik</p>
+              <p class="text-gray-600">Consultant OB/GYN</p>
+            </div>
+          </div>
+          <!-- Card 4 Slide1 -->
+          <div class="flex flex-col items-center bg-blue-100 rounded-lg p-4 mb-8 space-y-4 m-2">
+            <div class="img min-h-72 rounded-full grid place-content-center  border-2 border-slate-50 p-2 overflow-hidden -mt-14">
+              <div class="border-2 border-slate-50 grid place-content-center p-2 rounded-full overflow-hidden">
+                <img src="./Imggs/docGal.jpeg" alt="" class="object-cover rounded-full">
+              </div>
+            </div>
+            <!-- Doctors description -->
+            <div class="">
+              <p class="text-xl text-gray-500">DR. Abdulmalik</p>
+              <p class="text-gray-600">Consultant OB/GYN</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- SLIDER 4 ENDS -->
+        <!-- SLIDER 5 Star -->
+        <div class="swiper-slide">
+          <div class="flex justify-around items-center">
+          <!-- Card 1 -->
+          <div class="flex flex-col items-center bg-blue-100 rounded-lg p-4 mb-8 space-y-4 m-2">
+            <div class="img min-h-72 rounded-full grid place-content-center  border-2 border-slate-50 p-2 overflow-hidden -mt-14">
+              <div class="border-2 border-slate-50 grid place-content-center p-2 rounded-full overflow-hidden">
+                <img src="./Imggs/doc scrub.jpeg" alt="" class="object-cover rounded-full">
+              </div>
+            </div>
+            <!-- Doctors description -->
+            <div class="">
+              <p class="text-xl text-gray-500">DR. Michaels</p>
+              <p class="text-gray-600">Consultant Otorhinolaryngologist</p>
+            </div>
+          </div>
+          <!-- Card 2 Slide1 -->
+          <div class="hidden md:flex flex-col items-center bg-blue-100 rounded-lg p-4 mb-8 space-y-4 m-2">
+            <div class="img min-h-72 rounded-full grid place-content-center  border-2 border-slate-50 p-2 overflow-hidden -mt-14">
+              <div class="border-2 border-slate-50 grid place-content-center p-2 rounded-full overflow-hidden">
+                <img src="./Imggs/docGal.jpeg" alt="" class="object-cover rounded-full">
+              </div>
+            </div>
+            <!-- Doctors description -->
+            <div class="">
+              <p class="text-xl text-gray-500">DR. Abdulmalik</p>
+              <p class="text-gray-600">Consultant OB/GYN</p>
+            </div>
+          </div>
+          <!-- Card 3 Slide1 -->
+          <div class="hidden md:flex flex-col items-center bg-blue-100 rounded-lg p-4 mb-8 space-y-4 m-2">
+            <div class="img min-h-72 rounded-full grid place-content-center  border-2 border-slate-50 p-2 overflow-hidden -mt-14">
+              <div class="border-2 border-slate-50 grid place-content-center p-2 rounded-full overflow-hidden">
+                <img src="./Imggs/docGal.jpeg" alt="" class="object-cover rounded-full">
+              </div>
+            </div>
+            <!-- Doctors description -->
+            <div class="">
+              <p class="text-xl text-gray-500">DR. Abdulmalik</p>
+              <p class="text-gray-600">Consultant OB/GYN</p>
+            </div>
+          </div>
+          <!-- Card 4 Slide1 -->
+          <div class="hidden md:flex flex-col items-center bg-blue-100 rounded-lg p-4 mb-8 space-y-4 m-2">
+            <div class="img min-h-72 rounded-full grid place-content-center  border-2 border-slate-50 p-2 overflow-hidden -mt-14">
+              <div class="border-2 border-slate-50 grid place-content-center p-2 rounded-full overflow-hidden">
+                <img src="./Imggs/docGal.jpeg" alt="" class="object-cover rounded-full">
+              </div>
+            </div>
+            <!-- Doctors description -->
+            <div class="">
+              <p class="text-xl text-gray-500">DR. Abdulmalik</p>
+              <p class="text-gray-600">Consultant OB/GYN</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- SLIDER 5 ENDS -->
+
+        <!-- SLIDER 6 -->
+        <div class="swiper-slide">
+          <div class="flex justify-around items-center">
+          <!-- Card 2 Slide1 -->
+          <div class="md:hidden flex-col items-center bg-blue-100 rounded-lg p-4 mb-8 space-y-4 m-2">
+            <div class="img  rounded-full grid place-content-center  border-2 border-slate-50 p-2 overflow-hidden -mt-14">
+              <div class="border-2 border-slate-50 grid place-content-center p-2 rounded-full overflow-hidden">
+                <img src="./Imggs/docGal.jpeg" alt="" class="object-cover rounded-full">
+              </div>
+            </div>
+            <!-- Doctors description -->
+            <div class="">
+              <p class="text-xl text-gray-500">DR. Edijana</p>
+              <p class="text-gray-600">Clinical Oncology Specialist</p>
+            </div>
+          </div>
+        </div>
+        <!-- SLIDER 5 ENDS -->
+      </div>
+      <!-- <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div> -->
+    </div>
+    <!-- DOCTORS SLIDER END -->
+    </section>
+    <!-- OUR TEAM SECTION ENDS -->
+
+    <!-- SERVICES SECTION -->
+    <section id="Services" class="package min-w-full bg-gray-200">
+      <div id="display"></div>
+      <div class="text-center mb-12 p-8">
+        <h1 class="text">OUR PACKAGES</h1>
+        <hr>
+      </div>
+      <!--  -->
+      <img src="./Imggs/left_bvmv7q.png" alt="" class="left_bg">
+      <!--  -->
+      <!--  -->
+      <img src="./Imggs/left_bvmv7q.png" alt="" class="right_bg">
+      <!--  -->
+      <div class="container mx-auto my-6 flex flex-col justify-between align-middle">
+        <!-- service cards -->
+        <div class="service_card grid grid-cols-1 gap-2 md:flex-row md:grid-cols-3 lg:grid-cols-4">
+          <!-- Each Card -->
+          <div class="w-full  min-h-64 rounded-sm transition-all duration-300 border-4 text-center border-gray-400 p-4 py-8 md:w-72 hover:translate-y-3 justify-around align-middle bg-teal-600 bg-center bg-cover bg-no-repeat bg-blend-multiply" style="background-image: url(./Imggs/Obstetrics.jpg);">
+            <div id="title">
+              <h2 class="text-slate-100 text-2xl font-bold">OBSTETRICS AND GYNAECOLOGY</h2>
+            </div>
+            <p class="text-gray-300 text-center py-3">We offer access to the best internal medicine services Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quo facilis minus dolorum dicta ducimus pariatur autem dolor neque deleniti</p>
+            <a href="#contacts">
+              <button class="bg-transparent py-2 px-4 rounded-full text-slate-100 shadow-md hover:bg-blue-500 border-slate-200 border-2">Know more ></button>
+            </a>
+          </div>
+          <div class="w-full  min-h-64 rounded-sm transition-all duration-300 border-4 text-center border-gray-400 p-4 py-8 md:w-72 hover:translate-y-3 justify-around align-middle bg-teal-600 bg-center bg-cover bg-no-repeat bg-blend-multiply" style="background-image: url(./Imggs/docGal.jpeg);">
+            <div id="title">
+              <h2 class="text-slate-100 text-2xl font-bold">INTERNAL MEDICINE</h2>
+            </div>
+            <p class="text-gray-300 text-center py-3">We offer access to the best internal medicine services Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quo facilis minus dolorum dicta ducimus pariatur autem dolor neque deleniti</p>
+            <a href="#Contacts">
+              <button class="bg-transparent py-2 px-4 rounded-full text-slate-100 shadow-md hover:bg-blue-500 border-slate-200 border-2">Know more ></button>
+            </a>
+          </div>
+          <div class="w-full  min-h-64 rounded-sm transition-all duration-300 border-4 text-center border-gray-400 p-4 py-8 md:w-72 hover:translate-y-3 justify-around align-middle bg-teal-600 bg-center bg-cover bg-no-repeat bg-blend-multiply" style="background-image: url(./Imggs/Surgery.jpg);">
+            <div id="title">
+              <h2 class="text-slate-100 text-2xl font-bold">SURGERY</h2>
+            </div>
+            <p class="text-gray-300 text-center py-3">We offer access to the best internal medicine services Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quo facilis minus dolorum dicta ducimus pariatur autem dolor neque deleniti</p>
+            <a href='#Contacts'>
+              <button class="bg-transparent py-2 px-4 rounded-full text-slate-100 shadow-md hover:bg-blue-500 border-slate-200 border-2">Know more ></button>
+            </a>
+          </div>
+          <div class="w-full  min-h-64 rounded-sm transition-all duration-300 border-4 text-center border-gray-400 p-4 py-8 md:w-72 hover:translate-y-3 justify-around align-middle bg-teal-600 bg-center bg-cover bg-no-repeat bg-blend-multiply" style="background-image: url(./Imggs/Obstetrics.jpg);">
+            <div id="title">
+              <h2 class="text-slate-100 text-2xl font-bold">FAMILY PLANNING</h2>
+            </div>
+            <p class="text-gray-300 text-center py-3">We offer access to the best internal medicine services Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quo facilis minus dolorum dicta ducimus pariatur autem dolor neque deleniti</p>
+            <a href='#Contacts'>
+
+              <button class="bg-transparent py-2 px-4 rounded-full text-slate-100 shadow-md hover:bg-blue-500 border-slate-200 border-2">Know more ></button>
+            </a>
+          </div>
+          <div class="w-full  min-h-64 rounded-sm transition-all duration-300 border-4 text-center border-gray-400 p-4 py-8 md:w-72 hover:translate-y-3 justify-around align-middle bg-teal-600 bg-center bg-cover bg-no-repeat bg-blend-multiply" style="background-image: url(./Imggs/Radiology-MRI.jpg);">
+            <div id="title">
+              <h2 class="text-slate-100 text-2xl font-bold">RADIOLOGY</h2>
+            </div>
+            <p class="text-gray-300 text-center py-3">We offer access to the best internal medicine services Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quo facilis minus dolorum dicta ducimus pariatur autem dolor neque deleniti</p>
+            <a>
+              <button class="bg-transparent py-2 px-4 rounded-full text-slate-100 shadow-md hover:bg-blue-500 border-slate-200 border-2">Know more ></button>
+
+            </a>
+          </div>
+          <!-- Card -->
+          <div class="hidden md:block w-full  min-h-64 rounded-sm transition-all duration-300 border-4 text-center border-gray-400 p-4 py-8 md:w-72 hover:translate-y-3 justify-around align-middle bg-teal-600 bg-center bg-cover bg-no-repeat bg-blend-multiply" style="background-image: url(./Imggs/Microscope\ lab.jpg);">
+            <div id="title">
+              <h2 class="text-slate-100 text-2xl font-bold">LABORATORY</h2>
+            </div>
+            <p class="text-gray-300 text-center py-3">We offer access to the best internal medicine services Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quo facilis minus dolorum dicta ducimus pariatur autem dolor neque deleniti</p>
+            <a href='#Contacts'>
+              <button class="bg-transparent py-2 px-4 rounded-full text-slate-100 shadow-md hover:bg-blue-500 border-slate-200 border-2">Know more ></button>
+
+            </a>
+          </div>
+          <!-- Card -->
+          <div class="hidden md:block w-full  min-h-64 rounded-sm transition-all duration-300 border-4 text-center border-gray-400 p-4 py-8 md:w-72 hover:translate-y-3 justify-around align-middle bg-teal-600 bg-center bg-cover bg-no-repeat bg-blend-multiply" style="background-image: url(./Imggs/Obstetrics.jpg);">
+            <div id="title">
+              <h2 class="text-slate-100 text-2xl font-bold">PAEDIATRICS</h2>
+            </div>
+            <p class="text-gray-300 text-center py-3">We offer access to the best internal medicine services Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quo facilis minus dolorum dicta ducimus pariatur autem dolor neque deleniti</p>
+            <a href='#Contacts'>
+              <button class="bg-transparent py-2 px-4 rounded-full text-slate-100 shadow-md hover:bg-blue-500 border-slate-200 border-2">Know more ></button>
+
+            </a>
+          </div>
+          <!-- card -->
+          <div class="hidden md:block w-full  min-h-64 rounded-sm transition-all duration-300 border-4 text-center border-gray-400 p-4 py-8 md:w-72 hover:translate-y-3 justify-around align-middle bg-teal-600 bg-center bg-cover bg-no-repeat bg-blend-multiply" style="background-image: url(./Imggs/Obstetrics.jpg);">
+            <div id="title">
+              <h2 class="text-slate-100 text-2xl font-bold">DIALYSIS</h2>
+            </div>
+            <p class="text-gray-300 text-center py-3">We offer access to the best internal medicine services Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quo facilis minus dolorum dicta ducimus pariatur autem dolor neque deleniti</p>
+           <a href='#Contacts'>
+             <button class="bg-transparent py-2 px-4 rounded-full text-slate-100 shadow-md hover:bg-blue-500 border-slate-200 border-2">Know more ></button>
+
+           </a>
+          </div>
+        </div>
+        <!-- <button class="rounded-full py-2 px-4 bg-blue-200 text-blue-500 shadow-md hover:bg-blue-500 hover:text-slate-50 border-slate-200 border-2 mx-auto my-8 w-32">
+          See all
+        </button> -->
+      </div>
+    </section>
+    <!-- SERVICE SECTION ENDS -->
+
+
+   <!-- TESTIMONIAL -->
+    <section id="Testimonials">
+      <!-- section header starts -->
+      <div class="text-center mb-12 p-8">
+        <h1 class="text">TESTIMONIES</h1>
+        <hr>
+      </div>
+      <!-- section header end -->
+      <!-- Testimonial SLIDER -->
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper pb-12 mb-12">
+      <div class="swiper-wrapper">
+        <!-- SLIDER 1 -->
+        <div class="swiper-slide">
+          <div class="flex justify-around items-center">
+            <!-- card1 -->
+            <div class="card flex flex-col justify-between text-center bg-blue-100 bg-opacity-10 rounded-md h-72 w-72 shadow-xl p-6 m-2">
+              <div class="">
+                <p class="-mt-8 text-2xl">"</p>
+              </div>
+              <!-- text -->
+              <div class="text-sm">
+                <p>"My recent experience at Alpha Specialist Hospital has truly restored my faith in healthcare. The staff went above and beyond to make me feel comfortable and cared for during a difficult time. From the cleanliness of the facility to the expertise of the medical team."</p>
+              </div>
+              <!-- sender -->
+              <div class="">
+                <p>Michael Johnson</p>
+                <p class="text-gray-300 italic text-sm">[02-05-2019]</p>
+              </div>
+            </div>
+            <!-- Card2 slide 1 -->
+            <div class="hidden card md:flex flex-col justify-between text-center bg-blue-100 bg-opacity-10 rounded-md h-72 w-72 shadow-xl p-6 m-2">
+              <div class="">
+                <p class="-mt-8 text-2xl">"</p>
+              </div>
+              <!-- text -->
+              <div class="text-sm">
+                <p>"I can't express how thankful I am to Alpha Specialist Hospital for the remarkable care they provided to me during my childbirth. The maternity team was not only highly skilled but also incredibly supportive. They made the whole experience a joyous and stress-free one for me and my family."</p>
+              </div>
+              <!-- sender -->
+              <div class="">
+                <p>Apostle Jonathan</p>
+                <p class="text-gray-300 italic text-sm">[02-05-2019]</p>
+              </div>
+            </div>
+            <!-- Card3 Slide 1 -->
+            <div class="hidden card md:flex flex-col justify-between text-center bg-blue-100 bg-opacity-10 rounded-md h-72 w-72 shadow-xl p-6 m-2">
+              <div class="">
+                <p class="-mt-8 text-2xl">"</p>
+              </div>
+              <!-- text -->
+              <div class="text-sm">
+                <p>"I can't thank the staff at Alpha Specialist Hospital enough for the exceptional care I received during my recent surgery. From the moment I walked in, the nurses, doctors, and support staff made me feel like family. Their expertise and compassion were evident throughout my stay, and I'm on the road to recovery faster than I ever imagined."</p>
+              </div>
+              <!-- sender -->
+              <div class="">
+                <p>Miracle Adesewa</p>
+                <p class="text-gray-300 italic text-sm">[02-05-2019]</p>
+              </div>
+            </div>
+            <!-- CARD4 Slide1 -->
+            <div class="hidden card md:flex flex-col justify-between text-center bg-blue-100 bg-opacity-10 rounded-md h-72 w-72 shadow-xl p-6 m-2">
+              <div class="">
+                <p class="-mt-8 text-2xl">"</p>
+              </div>
+              <!-- text -->
+              <div class="text-sm">
+                <p>"I'm incredibly grateful to Alpha Specialist Hospital for the outstanding care I received during my stay. The medical team was not only professional but also incredibly empathetic. They took the time to explain every aspect of my treatment, and I felt like an active participant in my recovery. "</p>
+              </div>
+              <!-- sender -->
+              <div class="">
+                <p>Mrs Adedoyin James</p>
+                <p class="text-gray-300 italic text-sm">[02-05-2019]</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SLIDER 1 ENDS -->
+        <!-- SLIDER 2 -->
+        <div class="swiper-slide">
+          <div class="flex justify-around items-center">
+            <!-- card1 -->
+            <div class="hidden card md:flex flex-col justify-between text-center bg-blue-100 bg-opacity-10 rounded-md h-72 w-72 shadow-xl p-6 m-2">
+              <div class="">
+                <p class="-mt-8 text-2xl">"</p>
+              </div>
+              <!-- text -->
+              <div class="text-sm">
+                <p>"My recent experience at Alpha Specialist Hospital has truly restored my faith in healthcare. The staff went above and beyond to make me feel comfortable and cared for during a difficult time. From the cleanliness of the facility to the expertise of the medical team."</p>
+              </div>
+              <!-- sender -->
+              <div class="">
+                <p>Michael Johnson</p>
+                <p class="text-gray-300 italic text-sm">[02-05-2019]</p>
+              </div>
+            </div>
+            <!-- Card2 slide 2 -->
+            <div class="card flex flex-col justify-between text-center bg-blue-100 bg-opacity-10 rounded-md h-72 w-72 shadow-xl p-6 m-2">
+              <div class="">
+                <p class="-mt-8 text-2xl">"</p>
+              </div>
+              <!-- text -->
+              <div class="text-sm">
+                <p>"I can't express how thankful I am to Alpha Specialist Hospital for the remarkable care they provided to me during my childbirth. The maternity team was not only highly skilled but also incredibly supportive. They made the whole experience a joyous and stress-free one for me and my family."</p>
+              </div>
+              <!-- sender -->
+              <div class="">
+                <p>Apostle Jonathan</p>
+                <p class="text-gray-300 italic text-sm">[02-05-2019]</p>
+              </div>
+            </div>
+            <!-- Card3 Slide 2 -->
+            <div class="hidden card md:flex flex-col justify-between text-center bg-blue-100 bg-opacity-10 rounded-md h-72 w-72 shadow-xl p-6 m-2">
+              <div class="">
+                <p class="-mt-8 text-2xl">"</p>
+              </div>
+              <!-- text -->
+              <div class="text-sm">
+                <p>""I can't thank the staff at Alpha Specialist Hospital enough for the exceptional care I received during my recent surgery. From the moment I walked in, the nurses, doctors, and support staff made me feel like family. Their expertise and compassion were evident throughout my stay, and I'm on the road to recovery faster than I ever imagined."</p>
+              </div>
+              <!-- sender -->
+              <div class="">
+                <p>Miracle Adesewa</p>
+                <p class="text-gray-300 italic text-sm">[02-05-2019]</p>
+              </div>
+            </div>
+            <!-- CARD4 Slide2 -->
+            <div class="hidden card md:flex flex-col justify-between text-center bg-blue-100 bg-opacity-10 rounded-md h-72 w-72 shadow-xl p-6 m-2">
+              <div class="">
+                <p class="-mt-8 text-2xl">"</p>
+              </div>
+              <!-- text -->
+              <div class="text-sm">
+                <p>"I'm incredibly grateful to Alpha Specialist Hospital for the outstanding care I received during my stay. The medical team was not only professional but also incredibly empathetic. They took the time to explain every aspect of my treatment, and I felt like an active participant in my recovery. "</p>
+              </div>
+              <!-- sender -->
+              <div class="">
+                <p>Mrs Adedoyin James</p>
+                <p class="text-gray-300 italic text-sm">[02-05-2019]</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SLIDER 2 ENDS -->
+        <!-- SLIDER 3 -->
+        <div class="swiper-slide">
+          <div class="flex justify-around items-center">
+            <!-- card1 -->
+            <div class="hidden card md:flex flex-col justify-between text-center bg-blue-100 bg-opacity-10 rounded-md h-72 w-72 shadow-xl p-6 m-2">
+              <div class="">
+                <p class="-mt-8 text-2xl">"</p>
+              </div>
+              <!-- text -->
+              <div class="text-sm">
+                <p>"My recent experience at Alpha Specialist Hospital has truly restored my faith in healthcare. The staff went above and beyond to make me feel comfortable and cared for during a difficult time. From the cleanliness of the facility to the expertise of the medical team."</p>
+              </div>
+              <!-- sender -->
+              <div class="">
+                <p>Michael Johnson</p>
+                <p class="text-gray-300 italic text-sm">[02-05-2019]</p>
+              </div>
+            </div>
+            <!-- Card2 slide 3 -->
+            <div class="hidden card md:flex flex-col justify-between text-center bg-blue-100 bg-opacity-10 rounded-md h-72 w-72 shadow-xl p-6 m-2">
+              <div class="">
+                <p class="-mt-8 text-2xl">"</p>
+              </div>
+              <!-- text -->
+              <div class="text-sm">
+                <p>"I can't express how thankful I am to Alpha Specialist Hospital for the remarkable care they provided to me during my childbirth. The maternity team was not only highly skilled but also incredibly supportive. They made the whole experience a joyous and stress-free one for me and my family."</p>
+              </div>
+              <!-- sender -->
+              <div class="">
+                <p>Apostle Jonathan</p>
+                <p class="text-gray-300 italic text-sm">[02-05-2019]</p>
+              </div>
+            </div>
+            <!-- Card3 Slide 3 -->
+            <div class="card flex flex-col justify-between text-center bg-blue-100 bg-opacity-10 rounded-md h-72 w-72 shadow-xl p-6 m-2">
+              <div class="">
+                <p class="-mt-8 text-2xl">"</p>
+              </div>
+              <!-- text -->
+              <div class="text-sm">
+                <p>"I can't thank the staff at Alpha Specialist Hospital enough for the exceptional care I received during my recent surgery. From the moment I walked in, the nurses, doctors, and support staff made me feel like family. Their expertise and compassion were evident throughout my stay, and I'm on the road to recovery faster than I ever imagined."</p>
+              </div>
+              <!-- sender -->
+              <div class="">
+                <p>Miracle Adesewa</p>
+                <p class="text-gray-300 italic text-sm">[02-05-2019]</p>
+              </div>
+            </div>
+            <!-- CARD4 Slide3 -->
+            <div class="hidden card md:flex flex-col justify-between text-center bg-blue-100 bg-opacity-10 rounded-md h-72 w-72 shadow-xl p-6 m-2">
+              <div class="">
+                <p class="-mt-8 text-2xl">"</p>
+              </div>
+              <!-- text -->
+              <div class="text-sm">
+                <p>"I'm incredibly grateful to Alpha Specialist Hospital for the outstanding care I received during my stay. The medical team was not only professional but also incredibly empathetic. They took the time to explain every aspect of my treatment, and I felt like an active participant in my recovery. "</p>
+              </div>
+              <!-- sender -->
+              <div class="">
+                <p>Mrs Adedoyin James</p>
+                <p class="text-gray-300 italic text-sm">[02-05-2019]</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SLIDER 3 ENDS -->
+        <!-- SLIDER 4 -->
+        <div class="swiper-slide">
+          <div class="flex justify-around items-center">
+            <!-- card1 -->
+            <div class="hidden card md:flex flex-col justify-between text-center bg-blue-100 bg-opacity-10 rounded-md h-72 w-72 shadow-xl p-6 m-2">
+              <div class="">
+                <p class="-mt-8 text-2xl">"</p>
+              </div>
+              <!-- text -->
+              <div class="text-sm">
+                <p>"My recent experience at Alpha Specialist Hospital has truly restored my faith in healthcare. The staff went above and beyond to make me feel comfortable and cared for during a difficult time. From the cleanliness of the facility to the expertise of the medical team."</p>
+              </div>
+              <!-- sender -->
+              <div class="">
+                <p>Michael Johnson</p>
+                <p class="text-gray-300 italic text-sm">[02-05-2019]</p>
+              </div>
+            </div>
+            <!-- Card2 slide 4 -->
+            <div class="hidden card md:flex flex-col justify-between text-center bg-blue-100 bg-opacity-10 rounded-md h-72 w-72 shadow-xl p-6 m-2">
+              <div class="">
+                <p class="-mt-8 text-2xl">"</p>
+              </div>
+              <!-- text -->
+              <div class="text-sm">
+                <p>"I can't express how thankful I am to Alpha Specialist Hospital for the remarkable care they provided to me during my childbirth. The maternity team was not only highly skilled but also incredibly supportive. They made the whole experience a joyous and stress-free one for me and my family."</p>
+              </div>
+              <!-- sender -->
+              <div class="">
+                <p>Apostle Jonathan</p>
+                <p class="text-gray-300 italic text-sm">[02-05-2019]</p>
+              </div>
+            </div>
+            <!-- Card3 Slide 4 -->
+            <div class="hidden card md:flex flex-col justify-between text-center bg-blue-100 bg-opacity-10 rounded-md h-72 w-72 shadow-xl p-6 m-2">
+              <div class="">
+                <p class="-mt-8 text-2xl">"</p>
+              </div>
+              <!-- text -->
+              <div class="text-sm">
+                <p>"I can't thank the staff at Alpha Specialist Hospital enough for the exceptional care I received during my recent surgery. From the moment I walked in, the nurses, doctors, and support staff made me feel like family. Their expertise and compassion were evident throughout my stay, and I'm on the road to recovery faster than I ever imagined."</p>
+              </div>
+              <!-- sender -->
+              <div class="">
+                <p>Miracle Adesewa</p>
+                <p class="text-gray-300 italic text-sm">[02-05-2019]</p>
+              </div>
+            </div>
+            <!-- CARD4 Slide4 -->
+            <div class="card flex flex-col justify-between text-center bg-blue-100 bg-opacity-10 rounded-md h-72 w-72 shadow-xl p-6 m-2">
+              <div class="">
+                <p class="-mt-8 text-2xl">"</p>
+              </div>
+              <!-- text -->
+              <div class="text-sm">
+                <p>"I'm incredibly grateful to Alpha Specialist Hospital for the outstanding care I received during my stay. The medical team was not only professional but also incredibly empathetic. They took the time to explain every aspect of my treatment, and I felt like an active participant in my recovery. "</p>
+              </div>
+              <!-- sender -->
+              <div class="">
+                <p>Mrs Adedoyin James</p>
+                <p class="text-gray-300 italic text-sm">[02-05-2019]</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SLIDER 4 ENDS -->
+        <!-- SLIDER 5 -->
+        <div class="swiper-slide">
+          <div class="flex justify-around items-center">
+            <!-- card1 -->
+            <div class="hidden card md:flex flex-col justify-between text-center bg-blue-100 bg-opacity-10 rounded-md h-72 w-72 shadow-xl p-6 m-2">
+              <div class="">
+                <p class="-mt-8 text-2xl">"</p>
+              </div>
+              <!-- text -->
+              <div class="text-sm">
+                <p>"My recent experience at Alpha Specialist Hospital has truly restored my faith in healthcare. The staff went above and beyond to make me feel comfortable and cared for during a difficult time. From the cleanliness of the facility to the expertise of the medical team."</p>
+              </div>
+              <!-- sender -->
+              <div class="">
+                <p>Michael Johnson</p>
+                <p class="text-gray-300 italic text-sm">[02-05-2019]</p>
+              </div>
+            </div>
+            <!-- Card2 slide 5 -->
+            <div class="hidden card md:flex flex-col justify-between text-center bg-blue-100 bg-opacity-10 rounded-md h-72 w-72 shadow-xl p-6 m-2">
+              <div class="">
+                <p class="-mt-8 text-2xl">"</p>
+              </div>
+              <!-- text -->
+              <div class="text-sm">
+                <p>"I can't express how thankful I am to Alpha Specialist Hospital for the remarkable care they provided to me during my childbirth. The maternity team was not only highly skilled but also incredibly supportive. They made the whole experience a joyous and stress-free one for me and my family."</p>
+              </div>
+              <!-- sender -->
+              <div class="">
+                <p>Apostle Jonathan</p>
+                <p class="text-gray-300 italic text-sm">[02-05-2019]</p>
+              </div>
+            </div>
+            <!-- Card3 Slide 5 -->
+            <div class="hidden card md:flex flex-col justify-between text-center bg-blue-100 bg-opacity-10 rounded-md h-72 w-72 shadow-xl p-6 m-2">
+              <div class="">
+                <p class="-mt-8 text-2xl">"</p>
+              </div>
+              <!-- text -->
+              <div class="text-sm">
+                <p>"I can't thank the staff at Alpha Specialist Hospital enough for the exceptional care I received during my recent surgery. From the moment I walked in, the nurses, doctors, and support staff made me feel like family. Their expertise and compassion were evident throughout my stay, and I'm on the road to recovery faster than I ever imagined."</p>
+              </div>
+              <!-- sender -->
+              <div class="">
+                <p>Miracle Adesewa</p>
+                <p class="text-gray-300 italic text-sm">[02-05-2019]</p>
+              </div>
+            </div>
+            <!-- CARD4 Slide5 -->
+            <div class="card flex flex-col justify-between text-center bg-blue-100 bg-opacity-10 rounded-md h-72 w-72 shadow-xl p-6 m-2">
+              <div class="">
+                <p class="-mt-8 text-2xl">"</p>
+              </div>
+              <!-- text -->
+              <div class="text-sm">
+                <p>"I'm incredibly grateful to Alpha Specialist Hospital for the outstanding care I received during my stay. The medical team was not only professional but also incredibly empathetic. They took the time to explain every aspect of my treatment, and I felt like an active participant in my recovery. "</p>
+              </div>
+              <!-- sender -->
+              <div class="">
+                <p>Mrs Adedoyin James</p>
+                <p class="text-gray-300 italic text-sm">[02-05-2019]</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SLIDER 5 ENDS -->
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <!-- FACILITIES SLIDER END -->
+    </section>
+    <!-- TESTIMONIAL ENDS -->
+
+    <!-- FAQQQS -->
+    <section id="Faqs" class="">
+      <div class="bg-gray-100 pb-12">
+        <!-- FAQS Header -->
+        <div class="text-center mb-12 p-8">
+          <h1 class="text">HAVE QUESTIONS?</h1>
+          <hr>
+        </div>
+        <!--  -->
+        <div class="container mx-auto">
+          <p class="capitalize text-2xl mb-6 text-center">Frequently asked questions</p>
+          <div class="accordion">
+            <!-- card1 -->
+            <div class="faqsBox mb-2 w-full mx-auto items-center md:w-2/3">
+              <div class="question bg-blue-700 flex justify-between px-6 py-3 cursor-pointer shadow-md">
+                <p class="md:text-xl text-slate-50">When can i see a doctor when I come to the hospital?</p>
+                <img src="./Imggs/arrow-right.svg" alt="" class="faqsArrow">
+              </div>
+              <div class="answer transition bg-gray-600 bg-opacity-10 p-0 h-0 overflow-hidden text-lg">
+                <p class="anser_txt ">Alpha Specialist Hospital run a 24 hour clinic service to all our patients. Anytime you decide to vist ASH, there will always be a doctor ready to attend to your health</p>
+              </div>
+            </div>
+            <!-- Card1 end -->
+            <!-- card2 -->
+            <div class="faqsBox mb-2 w-full mx-auto items-center md:w-2/3">
+              <div class="question bg-blue-700 flex justify-between px-6 py-3 cursor-pointer shadow-md">
+                <p class="md:text-xl  text-slate-50">I lost my hospital card. Can I get another one?</p>
+                <img src="./Imggs/arrow-right.svg" alt="" class="faqsArrow">
+              </div>
+              <div class="answer bg-gray-600 bg-opacity-10 p-0 h-0 overflow-hidden text-lg">
+                <p class="anser_txt">Alpha Specialist Hospital run a 24 hour clinic service to all our patients. Anytime you decide to vist ASH, there will always be a doctor ready to attend to your health</p>
+              </div>
+            </div>
+            <!-- Card2 end -->
+            <!-- card3 -->
+            <div class="faqsBox mb-2 w-full mx-auto items-center md:w-2/3">
+              <div class="question bg-blue-700 flex justify-between px-6 py-3 cursor-pointer shadow-md">
+                <p class="md:text-xl  text-slate-50">Can I see a doctor without my hospital card?</p>
+                <img src="./Imggs/arrow-right.svg" alt="" class="faqsArrow">
+              </div>
+              <div class="answer bg-gray-600 bg-opacity-10 p-0 h-0 overflow-hidden text-lg">
+                <p class="anser_txt">Alpha Specialist Hospital run a 24 hour clinic service to all our patients. Anytime you decide to vist ASH, there will always be a doctor ready to attend to your health</p>
+              </div>
+            </div>
+            <!-- Card3 end -->
+            <!-- card4 -->
+            <div class="faqsBox mb-2 w-full mx-auto items-center md:w-2/3">
+              <div class="question bg-blue-700 flex justify-between px-6 py-3 cursor-pointer shadow-md">
+                <p class="md:text-xl  text-slate-50">Is ambulance available for emergencies?</p>
+                <img src="./Imggs/arrow-right.svg" alt="" class="faqsArrow">
+              </div>
+              <div class="answer bg-gray-600 bg-opacity-10 p-0 h-0 overflow-hidden text-lg">
+                <p class="anser_txt">Oh! Yes! We operate emergency ambulance service to attend to emergency cases anytime and anywhere within ibadan. Any emergency? Please call us at: <a href="tel:+2348060010446" class="text-sm text-blue-700 font-bold">0803-ASH-CARE</a></p>
+              </div>
+            </div>
+            <!-- Card4 end -->
+            <!-- card5 -->
+            <div class="faqsBox mb-2 w-full mx-auto items-center md:w-2/3">
+              <div class="question bg-blue-700 flex justify-between px-6 py-3 cursor-pointer shadow-md">
+                <p class="md:text-xl  text-slate-50">Can I work at Alpha</p>
+                <img src="./Imggs/arrow-right.svg" alt="" class="faqsArrow">
+              </div>
+              <div class="answer bg-gray-600 bg-opacity-10 p-0 h-0 overflow-hidden text-lg">
+                <p class="anser_txt">Certainly. However, we are currently not recruiting. We will be sure to put it out there when services are required. Do ensure to apply then.</p>
+              </div>
+            </div>
+            <!-- Card5 end -->
+            <!-- card6 -->
+            <div class="faqsBox mb-2 w-full mx-auto items-center md:w-2/3">
+              <div class="question bg-blue-700 flex justify-between px-6 py-3 cursor-pointer shadow-md">
+                <p class="md:text-xl  text-slate-50">Can I do CS for delivery?</p>
+                <img src="./Imggs/arrow-right.svg" alt="" class="faqsArrow">
+              </div>
+              <div class="answer bg-gray-600 bg-opacity-10 p-0 h-0 overflow-hidden text-lg">
+                <p class="anser_txt">Alpha Specialist Hospital offers well controlled delivery services that soothes the patients choice. Vaginal delivery with pain control or CS delivery</p>
+              </div>
+            </div>
+            <!-- Card6 end -->
+            <!-- card7 -->
+            <div class="faqsBox mb-2 w-full mx-auto items-center md:w-2/3">
+              <div class="question bg-blue-700 flex justify-between px-6 py-3 cursor-pointer shadow-md">
+                <p class="md:text-xl  text-slate-50">Can I get a medical report</p>
+                <img src="./Imggs/arrow-right.svg" alt="" class="faqsArrow">
+              </div>
+              <div class="answer bg-gray-600 bg-opacity-10 p-0 h-0 overflow-hidden text-lg">
+                <p class="anser_txt">As long as you are our patient and you have been attended to and certified by one of our doctors, yes!</p>
+              </div>
+            </div>
+            <!-- Card7 end -->
+            <!-- card8 -->
+            <div class="faqsBox mb-2 w-full mx-auto items-center md:w-2/3">
+              <div class="question bg-blue-700 flex justify-between px-6 py-3 cursor-pointer shadow-md">
+                <p class="md:text-xl  text-slate-50">Does ASH have surgical theatre?</p>
+                <img src="./Imggs/arrow-right.svg" alt="" class="faqsArrow">
+              </div>
+              <div class="answer bg-gray-600 bg-opacity-10 p-0 h-0 overflow-hidden text-lg">
+                <p class="anser_txt">Alpha Specialist Hospital has state of the art theatre rooms where major and minor surgeries are performed following due international standards. To check our facilities, click here: <a href="#Facilities" class="text-blue-700 font-bold">Facilities</a></p>
+              </div>
+            </div>
+            <!-- Card8 end -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQS END -->
+
+
+    <!-- CONTACT US -->
+
+    <section id="Contacts" class="py-12">
+      <div class="container mx-auto w-full flex flex-col md:flex-row">
+        <div class="mx-auto container md:w-1/2 bg-blue-700 p-6 space-y-4 flex flex-col items-center text-center justify-around align-middle">
+          <div class="">
+            <h3 class="text-2xl text-slate-50">How Can We Help You?</h3>
+            <p class=" text-slate-50">You can reach to us by filling the form stating clearly how we could be of help. Our Team will reach out to you immediately</p>
+          </div>
+          <div class="animate-pulse w-72 h-72 rounded-[50%] grid place-content-center p-8 border-4 border-slate-200 bg-gray-500 bg-opacity-20">
+            <div class="animate-pulse w-64 h-64 rounded-[50%] grid place-content-center p-8 border-2 border-teal-200 bg-slate-300 bg-opacity-10">
+              <div class=" w-56 h-56 rounded-[50%] grid place-content-center bg-slate-50 shadow-2xl">
+                <p class=" text-9xl font-bold stroke-4 stroke-blue-700">?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-1/2 bg-teal-50 items-center">
+          <div class="flex justify-center text-2xl text-gray-800 my-4 py-2 capitalize font-bold">
+            Contact Us
+          </div>
+          <form action="" method="get" class="flex flex-col items-center p-6">
+            <!-- Detail 1 -->
+            <div class="flex flex-col mb-4 md:items-start text-gray-800 w-full md:w-2/3 mx-auto">
+              <!--  -->
+              <div class="">
+                <label for="name" class="pb-2 md:text-md">First Name:</label>
+              </div>
+              <div class="w-full">
+                <input type="text" id="name" name="name" required placeholder="John" class="w-full block  py-2 px-4 rounded-md border-2 focus:outline-blue-500 valid:outline-blue-500 invalid:outline-red-500 ">
+                <span class="hidden text-sm text-rose-300">Error! Input not correct</span>
+                <span class="hidden text-sm text-green-300">Thank You</span>
+              </div>
+            </div>
+            <!-- Detail 2 -->
+            <div class="flex flex-col mb-4 md:items-start text-gray-800 w-full md:w-2/3 mx-auto">
+              <!--  -->
+              <div class="">
+                <label for="name" class="pb-2 md:text-md">Last Name:</label>
+              </div>
+              <div class="w-full ">
+                <input type="text" id="name" name="name" required placeholder="Doe" class="w-full block  py-2 px-4 rounded-md border-2 focus:outline-blue-500 valid:outline-blue-500 invalid:outline-red-500">
+                <span class="hidden text-sm text-rose-300">Error! Input not correct</span>
+                <span class="hidden text-sm text-green-300">Thank You</span>
+              </div>
+            </div>
+            <!-- Detail 3 -->
+            <div class="flex flex-col mb-4 md:items-start text-gray-800 w-full md:w-2/3 mx-auto">
+              <!--  -->
+              <div class="w-full md:w-1/4">
+                <label for="name" class="pb-2 md:text-md">Email:</label>
+              </div>
+              <div class="w-full">
+                <input type="email" id="mail" required name="mail" required placeholder="abcd@xyz.gmail.com" class="w-full block py-2 px-4 rounded-md border-2 focus:outline-blue-500 valid:outline-blue-500 invalid:outline-red-500 ">
+                <span class="hidden text-sm text-rose-300">Error! Input not correct</span>
+                <span class="hidden text-sm text-green-300">Thank You</span>
+              </div>
+            </div>
+            <!-- Detail 4 -->
+            <div class="flex flex-col mb-4 md:items-start text-gray-800 w-full md:w-2/3 mx-auto">
+              <!--  -->
+              <div class="w-full md:w-1/4">
+                <label for="message" class="pb-2 md:text-md">Message:</label>
+              </div>
+              <div class="w-full">
+                <!-- <input type="text" id="name" required name="name" required placeholder="Write us a text" class="w-full block min-h-fit h-32 md:w-5/6 py-2 px-4 rounded-md border-2 focus:outline-blue-500 valid:outline-blue-500 invalid:outline-red-500 "> -->
+                <textarea name="message" id="message" placeholder="Write us" cols="30" rows="10"  class="w-full h-12 block p-4 rounded-md border-2 focus:outline-blue-500 valid:outline-blue-500 invalid:outline-red-500 "></textarea>
+                <span class="hidden text-sm text-rose-300">Error! Input not correct</span>
+                <span class="hidden text-sm text-green-300">Thank You</span>
+              </div>
+            </div>
+            <div class="">
+                <button type="submit" [disabled]="!form.form.valid" class="items-center py-4 px-6 mt-4 bg-blue-700 hover:bg-blue-500 rounded-lg border-2 border-gray-200 text-slate-50">
+                  Send Message
+                </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- END OF CONTACT -->
+
+
+
+    <!-- MAP -->
+
+    <section id="Map">
+      <div class="w-full overflow-hidden bg-gray-100">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.369255518831!2d3.9218787760232567!3d7.424324412037984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1039ed36bbb589ed%3A0xa037a8a48ec30d66!2sAlpha%20Specialist%20Hospital!5e0!3m2!1sen!2sng!4v1699341311516!5m2!1sen!2sng" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </section>
+
+    <!-- Moving Whatsapp Logo -->
+    <div class="sticky bottom-0 left-3 hidden md:block ml-8 -mb-12 w-32 rounded-full md:bg-gray-100 md:bg-opacity-10 md:border-2 md:border-slate-50 animate-bounce z-40">
+      <a href="tel:+2348060010446">
+        <img src="./Imggs/20230315_223059.png" alt="" class="w-full">
+      </a>
+    </div>
+    <!-- Moving Home redirect Logo -->
+    <!-- <div class="sticky bottom-0 left-3 md:hidden ml-8 -mb-12 w-8 rounded-full bg-gray-100 md:bg-opacity-10 border-2 border-slate-50 animate-bounce z-40">
+      <a href="#">
+        <img src="./Imggs/home-active.svg" alt="" class="w-full">
+      </a>
+    </div> -->
+
+    <!--  -->
+
+    <!-- FOOTER SECTION-->
+    <section class="bg-blue-800 text-slate-50 py-6">
+      <div class="container mx-auto w-full p-6 flex flex-col justify-between space-y-8 items-center md:items-start md:flex-row">
+        <div class="flex flex-col space-y-4 text-center w-full md:text-left md:w-1/3">
+          <!-- logo and other -->
+          <div class="flex flex-col w-full  md:flex-row">
+            <img src="./Imggs/logs.png" alt="" class=" w-18 md:w-32">
+            <p class="text-md">ALPHA SPECIALIST HOSPITAL</p>
+          </div>
+          <!-- copyright -->
+          <p class="hidden md:block">Copyrights &copy;, All Rights Reserved</p>
+          <!-- copyright end -->
+
+        </div>
+        <hr class="md:hidden">
+        <!-- Middle footer -->
+        <!-- Address -->
+        <div class="text-xl w-full flex justify-between md:w-1/3">
+          <img src="./Imggs/locator.png" alt="" class="w-12">
+          <p> 5, Muyiwa Sanda Street, Alegongo Estate, Akobo, Ibadan</p>
+        </div>
+
+        <!-- Third Footer -->
+        <div class="max-w-full flex flex-col-reverse items-center text-center justify-between align-middle space-y-4 md:flex-col md:text-right md:items-end md:w-1/3">
+          <!-- input -->
+          <div class="foot  mt-6 md:mt-0">
+            <!-- <input type="search" id="footer_input" disabled class="footer_input relative p-1 rounded-tl-md rounded-bl-md text-gray-700 focus:outline-blue-500 valid:outline-blue-500 invalid:outline-red-500" placeholder="find something"> -->
+            <!-- <span> -->
+              <!-- <button id="footer_btn" class="footer_btn text-blue-600 absolute bg-blue-100 font-bold rounded-tr-md rounded-br-md p-1 hover:bg-blue-400 hover:text-slate-50">Search</button> -->
+            <!-- </span> -->
+            <!-- <img src="./Imggs/search.svg" alt="" class="search_icon "> -->
+          </div>
+          <!-- input -->
+          <div class="flex  space-x-8">
+            <!-- Link 1 -->
+            <a href="facebook.com" class="w-6 bg-slate-50 rounded-full p-1">
+              <img src="./Imggs/facebook.svg" alt="" >
+            </a>
+            <!-- Link 2 -->
+            <a href="twitter.com" class="w-6 bg-slate-50 rounded-full p-1">
+              <img src="./Imggs/twitter.svg" alt="">
+            </a>
+            <!-- Link 3 -->
+            <a href="youtube.com" class="w-6 bg-slate-50 rounded-full p-1">
+              <img src="./Imggs/youtube.svg" alt="">
+            </a>
+           
+          </div>
+        </div>
+
+        <hr class="font-bold">
+
+
+        <p class="md:hidden">Copyrights, &copy;, All Rights Reserved</p>
+      </div>
+    </section>
+
+
+
+    <script src="./main.js"></script>
+    <!-- ONSCROLL INTERJECT JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
+    <!-- SWIPER JS for TESTIMONIAL -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      const progressCircle = document.querySelector(".autoplay-progress svg");
+      const progressContent = document.querySelector(".autoplay-progress span");
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2800,
+          disableOnInteraction: false
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        on: {
+          autoplayTimeLeft(s, time, progress) {
+            progressCircle.style.setProperty("--progress", 1 - progress);
+            progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
