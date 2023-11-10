@@ -2450,3 +2450,19 @@ ul {
   width: 100%;
   border: 0;
 }
+
+/* Mission card */
+.mission-card {
+  background-color: var(--card-clr);
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.12);
+  padding: 1rem;
+  border-radius: 5px;
+  width: 80%;
+  margin: 10px auto;
+}
+
+@media screen and (min-width: 968px) {
+  .mission-card {
+    width: 60%;
+  }
+}
