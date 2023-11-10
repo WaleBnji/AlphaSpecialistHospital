@@ -2182,16 +2182,11 @@ body {
 /*=============== LAYOUT ===============*/
 .accordion-container {
   /* max-width: 968px; */
-  margin-left: 1rem;
-  margin-right: 1rem;
+  /* margin-left: 1rem;
+  margin-right: 1rem; */
 }
 
 /*=============== ACCORDION ===============*/
-.accordion {
-  display: grid;
-  align-content: center;
-  height: auto;
-}
 
 .accordion__container {
   display: grid;
@@ -2200,6 +2195,13 @@ body {
   background-color: var(--container-color);
   border-radius: 0.5rem;
   box-shadow: 0 12px 32px rgba(51, 51, 51, 0.1);
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 968px) {
+  .accordion-container {
+    width: 70%;
+  }
 }
 
 .accordion__title {
@@ -2342,6 +2344,24 @@ body {
     padding: 0 4rem 1.25rem 3.5rem;
   }
 }
+@media screen and (min-width: 968px) {
+  .accordion__container {
+    width: 700px;
+    padding: 2.5rem;
+    justify-self: center;
+    border-radius: 0.75rem;
+    margin: 0 auto;
+  }
+  .accordion__header {
+    padding: 1.5rem;
+  }
+  .accordion__title {
+    padding-right: 3.5rem;
+  }
+  .accordion__description {
+    padding: 0 4rem 1.25rem 3.5rem;
+  }
+}
 
 /* For large devices */
 @media screen and (min-width: 968px) {
@@ -2465,4 +2485,12 @@ ul {
   .mission-card {
     width: 60%;
   }
+}
+
+.packages-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 80%;
+  margin: 50px auto 10px;
+  gap: 30px;
 }
