@@ -2437,7 +2437,7 @@ ul {
 
 .map-responsive {
   position: relative;
-  padding-bottom: 56.25%;
+  padding: 56.25% 0;
   height: 0;
   overflow: hidden;
 }
