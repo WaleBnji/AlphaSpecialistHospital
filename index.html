@@ -101,32 +101,29 @@
       <div id="navMobile" class="hidden navMobile">
         <nav class=" bg-gray-800 bg-opacity-95 w-full h-screen align-middle flex flex-col px-6 py-4 md:hidden">
           <ul class="container mx-auto w-full h-screen block space-y-8 align-middle ">
-            <li class="flex space-x-2 mb-4  w-full cursor-pointer shadow-md" >
+            <li class="flex space-x-2 mb-4  text-gray-50 w-full cursor-pointer shadow-md" >
               <a id="mobileOp"
               class="mobileOp flex hover:bg-gray-400 hover:text-gray-800 w-full p-2 text-lg"
               href="#home"
               >
-              <!-- <span> <img src="./Imggs/home-active.svg" alt="" class="mr-4 w-8 bg-slate-200 rounded-full p-1"></span> -->
-              <i class="fa-solid fa-house mr-4 w-10 bg-slate-200 rounded-full p-2 text-black"></i>
-              <p class='text-white'>Home</p>
+              <span> <img src="./Imggs/house.svg" alt="" class="mr-4 w-8 bg-slate-200 rounded-full p-2"></span>
               
-              </a
+              Home</a
             >
             
             </li>
-        
+           
             <!-- NavAbout -->
             <li class="flex flex-col mb-4 w-full transition" onclick="more()">
               <!-- <img src="./Imggs/home-active.svg" alt="" class="w-6"> -->
               
               <a id="mobileOp"
-              class="mobileOp  flex justify-between hover:bg-gray-400 hover:text-gray-800 p-2 w-full"
+              class="mobileOp  flex justify-between hover:bg-gray-400 hover:text-gray-800 p-2 text-gray-50 w-full"
               href="#About" 
               >
               <div class="flex">
-                <span><i class="fa-solid fa-address-card mr-4 w-10 bg-slate-200 rounded-full p-2 text-black"></i>
-                </span>
-                <p class='text-white'>About Us</p>
+                <img src="./Imggs/address-book.svg" alt="" class="mr-4 w-8 bg-slate-200 rounded-full p-2">
+                <p>About Us</p>
                 
               </div>
               <div class="">
@@ -141,22 +138,20 @@
                 <li class="ml-12 p-2" ><a href="#Team">Team</a></li>
               </ul>
             </li>
-
             <!-- ServicesMobile -->
             <li class="flex flex-col mb-4" onclick="sore()">
               <!--  -->
               <a id=""
-              class="mobileOp  flex justify-between hover:bg-gray-400 hover:text-gray-800 p-2  w-full"
+              class="mobileOp  flex justify-between hover:bg-gray-400 hover:text-gray-800 p-2 text-gray-50 w-full"
               href="#Services"
               >
               <div class="flex">
-                <span> 
-                  <i class="fa-solid fa-suitcase mr-4 w-10 bg-slate-200 rounded-full p-2"></i></span>
-                  <p class='text-white'>Services</p>
-
-                  
+                <img src="./Imggs/suitcase.svg" alt="" class="mr-4 w-8 bg-slate-200 rounded-full p-2">
+                <p>Services</p> 
               </div>
-             
+              <!-- <div class="">
+                <img src="./Imggs/arrow-right.svg" alt="" class="navArrow">
+              </div> -->
               </a>
               <!--  -->
               <ul id="subServMobile" class="subMobile hidden text-slate-50 space-y-3 w-full bg-slate-50 bg-opacity-10">
@@ -170,13 +165,11 @@
             <li class="flex space-x-2 mb-4" >
               <!--  -->
               <a
-              class="mobileOp flex hover:bg-gray-400 hover:text-gray-800 p-2 w-full"
+              class="mobileOp flex hover:bg-gray-400 hover:text-gray-800 p-2 text-gray-50 w-full"
               href="#Testimonials"
               >
-              <span> 
-                <i class="fa-solid fa-user mr-4 w-10 bg-slate-200 rounded-full p-2"></i></span>
-              
-              <p class='text-white'>Testimonials</p>
+              <img src="./Imggs/user.svg" alt="" class="mr-4 w-8 bg-slate-200 rounded-full p-2">
+              <p>Testimonials</p>
               </a
             >
             </li>
@@ -184,13 +177,12 @@
             <li class="flex space-x-2 mb-4" >
               <!--  -->
               <a
-              class="flex hover:bg-gray-400 hover:text-gray-800 p-2  w-full"
+              class="flex hover:bg-gray-400 hover:text-gray-800 p-2 text-gray-50 w-full"
               href="#Contacts"
               >
-              <span> 
-              
-              <i class="fa-solid fa-message mr-4 w-10 bg-slate-200 rounded-full p-2"></i></span>
-              <p class='text-white'>Contact Us</p></a
+              <img src="./Imggs/message.svg" alt="" class="mr-4 w-8 bg-slate-200 rounded-full p-2">
+              <p>Contact Us</p>
+              </a
             >
             </li>
           </ul>
@@ -874,7 +866,7 @@
 
 
    <!-- Testimonials -->
-    <div class="testimonials-section" id='Testimonials'>
+    <div class="testimonials-section">
 	
       <!-- Section Header Starts -->
       <header class="section-header">
@@ -1348,7 +1340,12 @@
                 <p class='pt-1 md:hidden'>Instagram</p>
               </div>
               <div class='flex  justify-start items-baseline'>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>                <p class='pt-1 md:hidden'>LinkedIn</p>
+                <a href="#"><i class="fab fa-linkedin-in"></i>
+                </a>                <p class='pt-1 md:hidden'>LinkedIn</p>
+              </div>
+              <div class='flex  justify-start items-baseline'>
+                <a href="#"><img src="Imggs/linkedin.svg" alt="" class='w-[30px] h-[30px]'>
+                </a>                <p class='pt-1 md:hidden'>LinkedIn</p>
               </div>
               
             </div>
