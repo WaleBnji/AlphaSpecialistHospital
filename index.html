@@ -101,30 +101,33 @@
       <div id="navMobile" class="hidden navMobile">
         <nav class=" bg-gray-800 bg-opacity-95 w-full h-screen align-middle flex flex-col px-6 py-4 md:hidden">
           <ul class="container mx-auto w-full h-screen block space-y-8 align-middle ">
-            <li class="flex space-x-2 mb-4  text-gray-50 w-full cursor-pointer shadow-md" >
+            <li class="flex space-x-2 mb-4  w-full cursor-pointer shadow-md" >
               <a id="mobileOp"
               class="mobileOp flex hover:bg-gray-400 hover:text-gray-800 w-full p-2 text-lg"
               href="#home"
               >
               <!-- <span> <img src="./Imggs/home-active.svg" alt="" class="mr-4 w-8 bg-slate-200 rounded-full p-1"></span> -->
-              <i class="fa-solid fa-house mr-4 w-8 bg-slate-200 rounded-full p-1 text-black"></i>
+              <i class="fa-solid fa-house mr-4 w-10 bg-slate-200 rounded-full p-2 text-black"></i>
+              <p class='text-white'>Home</p>
               
-              Home</a
+              </a
             >
             
             </li>
-            <i class="fa-solid fa-house"></i>
+        
             <!-- NavAbout -->
             <li class="flex flex-col mb-4 w-full transition" onclick="more()">
               <!-- <img src="./Imggs/home-active.svg" alt="" class="w-6"> -->
               
               <a id="mobileOp"
-              class="mobileOp  flex justify-between hover:bg-gray-400 hover:text-gray-800 p-2 text-gray-50 w-full"
+              class="mobileOp  flex justify-between hover:bg-gray-400 hover:text-gray-800 p-2 w-full"
               href="#About" 
               >
               <div class="flex">
-                <span> <img src="./Imggs/learning-active.svg" alt="" class="mr-4 w-8 bg-slate-200 rounded-full p-1"></span>
-                About Us
+                <span><i class="fa-solid fa-address-card mr-4 w-10 bg-slate-200 rounded-full p-2 text-black"></i>
+                </span>
+                <p class='text-white'>About Us</p>
+                
               </div>
               <div class="">
                 <img src="./Imggs/arrow-right.svg" alt="">
@@ -138,20 +141,22 @@
                 <li class="ml-12 p-2" ><a href="#Team">Team</a></li>
               </ul>
             </li>
+
             <!-- ServicesMobile -->
             <li class="flex flex-col mb-4" onclick="sore()">
               <!--  -->
               <a id=""
-              class="mobileOp  flex justify-between hover:bg-gray-400 hover:text-gray-800 p-2 text-gray-50 w-full"
+              class="mobileOp  flex justify-between hover:bg-gray-400 hover:text-gray-800 p-2  w-full"
               href="#Services"
               >
               <div class="flex">
-                <span> <img src="./Imggs/project-active.svg" alt="" class="mr-4 w-8 bg-slate-200 rounded-full p-1"></span>
-                Services
+                <span> 
+                  <i class="fa-solid fa-suitcase mr-4 w-10 bg-slate-200 rounded-full p-2"></i></span>
+                  <p class='text-white'>Services</p>
+
+                  
               </div>
-              <div class="">
-                <img src="./Imggs/arrow-right.svg" alt="" class="navArrow">
-              </div>
+             
               </a>
               <!--  -->
               <ul id="subServMobile" class="subMobile hidden text-slate-50 space-y-3 w-full bg-slate-50 bg-opacity-10">
@@ -165,22 +170,27 @@
             <li class="flex space-x-2 mb-4" >
               <!--  -->
               <a
-              class="mobileOp flex hover:bg-gray-400 hover:text-gray-800 p-2 text-gray-50 w-full"
+              class="mobileOp flex hover:bg-gray-400 hover:text-gray-800 p-2 w-full"
               href="#Testimonials"
               >
-              <span> <img src="./Imggs/home-active.svg" alt="" class="mr-4 w-8 bg-slate-200 rounded-full p-1"></span>
-              Testimonials</a
+              <span> 
+                <i class="fa-solid fa-user mr-4 w-10 bg-slate-200 rounded-full p-2"></i></span>
+              
+              <p class='text-white'>Testimonials</p>
+              </a
             >
             </li>
             <!-- Contact Mobile -->
             <li class="flex space-x-2 mb-4" >
               <!--  -->
               <a
-              class="flex hover:bg-gray-400 hover:text-gray-800 p-2 text-gray-50 w-full"
+              class="flex hover:bg-gray-400 hover:text-gray-800 p-2  w-full"
               href="#Contacts"
               >
-              <span> <img src="./Imggs/home-active.svg" alt="" class="mr-4 w-8 bg-slate-200 rounded-full p-1"></span>
-              Contact Us</a
+              <span> 
+              
+              <i class="fa-solid fa-message mr-4 w-10 bg-slate-200 rounded-full p-2"></i></span>
+              <p class='text-white'>Contact Us</p></a
             >
             </li>
           </ul>
@@ -864,7 +874,7 @@
 
 
    <!-- Testimonials -->
-    <div class="testimonials-section">
+    <div class="testimonials-section" id='Testimonials'>
 	
       <!-- Section Header Starts -->
       <header class="section-header">
