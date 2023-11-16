@@ -2205,7 +2205,7 @@ body {
 }
 
 .accordion__title {
-  font-size: var(--small-font-size);
+  /* font-size: var(--small-font-size); */
   color: var(--title-color);
   font-weight: 400;
   margin-top: 0.15rem;
@@ -2221,7 +2221,7 @@ body {
 
 .accordion__description {
   padding: 0 1.25rem 1.25rem 3rem;
-  font-size: var(--smaller-font-size);
+  font-size: var(--small-font-size);
 }
 
 .accordion__icon {
